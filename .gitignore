@@ -1,0 +1,32 @@
+# FORGE — ignored paths
+
+# runtime forkato e build
+runtime/upstream/
+build/
+
+# modelli GGUF (pesi, grandi, da git)
+models/
+artifacts/*.gguf
+*.gguf
+
+# oggetti build
+*.obj
+*.o
+*.a
+*.lib
+*.exe
+*.dll
+*.pdb
+
+# tmp agenti
+.forge/tmp/
+
+# ambiente
+node_modules/
+__pycache__/
+*.pyc
+
+# editor/OS
+.vscode/
+Thumbs.db
+Desktop.ini
