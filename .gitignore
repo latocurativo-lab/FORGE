@@ -3,6 +3,8 @@
 # runtime forkato e build
 runtime/upstream/
 build/
+build-*/
+llama.cpp/
 
 # modelli GGUF (pesi, grandi, da git)
 models/
@@ -20,6 +22,9 @@ artifacts/*.gguf
 
 # tmp agenti
 .forge/tmp/
+
+# log di runtime
+runtime/*.log
 
 # ambiente
 node_modules/

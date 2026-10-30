@@ -1,30 +1,35 @@
 # FORGE — Notice licenze
 
-Aggiornato: 2026-10-28 (M0)
+Aggiornato: 2026-10-31
 
 ## Componenti del progetto
 
-### 1. Gemma 4 12B-it (modelli GGUF)
-**Gemma license — verifica Fase 1.**
+### 1. Qwen3.6-35B-A3B (modelli GGUF in `models/`)
+Le varianti di FORGE sono quantizzazioni derivate: **Base** (`UD-IQ3_XXS`) e
+**Abliterated** (`Uncensored-HauhauCS-Aggressive-IQ3_M`, edit comunitario con
+rimozione aggressiva dei refusal). La famiglia Qwen è distribuita sotto licenza
+**Apache-2.0** (con i notice Qwen); le GGUF derivate di terzi ereditano i termini
+delle rispettive fonti (QuantTrio/Unsloth per la base, edit comunitario per la
+variante abliterated).
 
-Il modello è distribuito con la licenza proprietaria di Google ("Gemma Terms of Use").
-NON è Apache 2.0 puro. Il repo originale `google/gemma-4-12B-it` su Hugging Face è
-gated (richiede accettazione dei termini). Punti da verificare in Fase 1 (M0/M1):
+FORGE **non ridistribuisce i pesi**: il repo contiene solo dimensioni + SHA-256
+di riferimento (verificati dal launcher prima di ogni avvio), e il download resta
+responsabilità dell'utente finale.
 
-- [ ] Termini d'uso aggiornati dei modelli Gemma 4 (restrizioni su redistribuzione
-  dei pesi quantizzati e su output del modello).
-- [ ] Se una derivata quantizzata (Q4_K_M) prodotta da terzi su HF è ridistribuibile
-  sotto i medesimi termini o richiede l'accettazione esplicita della licenza gated.
-- [ ] Uso commerciale interno senza ridistribuzione dei pesi: confermare che sia
-  coperto; in caso di ridistribuzione del bundle FORGE+modello, rifiutare e
-  lasciare il download del modello all'utente finale.
+- [x] Base modellata su fonti pubbliche con SHA-256 verificato dal launcher:
+      `9c964e65…b88fbe` (base), `4dd9a27c…be0c0` (abliterated).
+- [x] Divulgato nel README/paper che la variante abliterated allucina di più
+      sui compiti factuali rispetto alla base a parità di condizioni di serving.
+- [ ] Uso commerciale interno: confermare i termini delle singole fonti GGUF;
+      la licenza del codice del runtime (MIT) è indipendente dai pesi.
 
-**Non scrivere/affermare che il modello sia Apache 2.0.** Il codice runtime sotto è
-MIT: modello e runtime hanno licenze distinte.
+**Non affermare mai che i pesi del modello siano coperti dalla licenza MIT del
+codice.** Pesi e codice hanno licenze separate: codice MIT, pesi secondo le
+fonti upstream (Apache-2.0/termini derivate).
 
 ### 2. llama.cpp (runtime forkato)
 **MIT** — https://github.com/ggml-org/llama.cpp/blob/master/LICENSE.
-Il fork mantiene la licenza e i copyright originali; le patch in `runtime/patches/`
+Il fork mantiene licenza e copyright originali; le patch in `runtime/patches/`
 seguono la licenza del progetto.
 
 ### 3. ds4 (riferimento di design per l'harness)
@@ -32,10 +37,13 @@ seguono la licenza del progetto.
 architetturale per l'harness in C: non è incluso codice copiato; se in futuro
 verrà incorporato codice, portare l'header di licenza MIT originale.
 
-### 4. Tauri, React, Monaco (Studio, da M3 in poi)
-Tauri: MIT/Apache-2.0. React: MIT. Monaco Editor: MIT.
-Da riportare in Fase 6 (Studio) con le versioni esatte.
+### 4. Tauri, React, Monaco (Studio)
+Tauri: MIT/Apache-2.0. React: MIT. Monaco Editor: MIT. Da riportare in Fase 6
+(Studio) con le versioni esatte.
+
+### 5. Codice FORGE (harness, adapter, tools, MCP, launcher)
+**MIT** — file `LICENSE` alla radice del repo.
 
 ## Cosa NON è incluso
 - CUDA Toolkit / driver NVIDIA: licenze proprietarie NVIDIA, il progetto non li
-  ridistribuisce; le build CUDA sono per uso locale sul macchine dell'utente.
+  ridistribuisce; le build CUDA sono per uso locale sulle macchine dell'utente.
