@@ -30,6 +30,72 @@ arXiv-style paper instead of hidden behind a company blog post.
 > misconfigured server collapsed to **1.7 tok/s** and how the tuned config got
 > back to **~44 tok/s** on the same hardware.
 
+## Why democratize AI
+
+*The intelligence layer became a utility you rent. FORGE is a bet that it can
+be owned.*
+
+Three trends made this an engineering problem rather than an opinion:
+
+**1. Rented intelligence keeps getting more expensive.** Every frontier model
+refresh resets pricing upward, meters context in more expensive tiers,
+throttles concurrent agent sessions, and bills you per second of "thinking"
+you didn't ask for. A team that wires its whole loop to an API finds the bill
+re-inventing itself as a payroll line item — while the GPU idling on the desk
+counts for nothing.
+
+**2. A rented brain can be taken away.** Terms change overnight. Models get
+deprecated. Regions get rate-limited. Accounts get flagged — with no appeal
+path an engineer can debug. When your agent is in production, you've shipped
+a dependency on a Terms of Service you never negotiated. That failure mode
+does not exist when the weights, the runtime, and the checkpoint format live
+on your machine.
+
+**3. "Cloud" means your data already left.** For a coding agent, the context
+*is* your repository: file contents, dependency manifests, architecture
+decisions, half-finished ideas, secrets-adjacent material. All of it crosses
+the wire into an immutable event stream on infrastructure you cannot inspect,
+cannot delete, and cannot audit. And the usage side is worse: providers train
+on your traffic, mine it for signals you never consented to share — **they
+use it, and they don't always care whether they should.** You cannot retrofit
+privacy onto someone else's account toggle.
+
+### Why the generalist stacks keep breaking (and why FORGE doesn't)
+
+llama.cpp, vLLM, and every other *generalist* serving + agent layer have to
+cater to everyone: every model family, every template, every quota, every
+upstream refactor. Generality has a price, and for agents the price is a
+contract that is *politely ambiguous*:
+
+- chat templates drift between releases, so what the tool-call marker means
+  this month is not what it meant when you built your parser;
+- `finish_reason` becomes a guess — "turn ended" and "generation truncated"
+  and "I wanted a tool" collapse into nearly the same byte pattern;
+- tool-call JSON arrives half-formed and the harness upstack either
+  hallucinates the other half or stalls with "please continue" loops.
+
+That's unwinnable at the model layer; it's won at the **contract layer**.
+FORGE pins its runtime to one commit and changes it only via patch series,
+rejects ambiguous stop reasons instead of guessing between them, validates
+every tool-call argument as a complete, duplicate-free JSON object before the
+harness sees it, refuses to resume a checkpoint after unknown side effects,
+and treats "done" as something a *verifier proves*, not something the model
+says. Interruptions still happen — the difference is FORGE records them as
+UNKNOWN and stops the run instead of pretending.
+
+### Why consumer hardware — because the 4060 Ti you already own is enough
+
+Democratization doesn't need a datacenter. 35B parameter models work on
+16 GB of VRAM if you engineer for them: mixture-of-experts with a 3B active
+budget, IQ3 quantization, hot experts resident on GPU, cold ones in system
+RAM with a 1 GiB cache, KV cache quantized q8_0. The recipe and its honest
+limits are in the paper (§4). One GPU you already bought, and the rest is
+engineering discipline.
+
+The stack stays **yours to read** — you own the model selection, the runtime,
+the tool format, the checkpoint format, the safety model. Nothing you depend
+on can be shipped out from under you in an update you can't audit.
+
 ## Highlights
 
 - **100% local inference** — OpenAI-compatible endpoint on loopback; unplug the

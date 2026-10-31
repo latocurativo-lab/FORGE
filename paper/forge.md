@@ -24,7 +24,10 @@ and checkpoint semantics that refuse to resume after unknown side effects. We
 close with honest limitations — including measured behavioral differences
 between the base and abliterated model variants under identical serving
 conditions — because a local-first stack that hides its failure modes is not
-local-first, it is just fragile.
+local-first, it is just fragile. Underneath the engineering sits a plain
+economic argument for owning the intelligence layer instead of renting it:
+rented inference re-prices upward, is revocable at Terms-of-Service speed,
+and its context is, for a coding agent, the codebase itself.
 
 ---
 
@@ -58,6 +61,54 @@ architecture; §4 the model selection and serving recipe with the spill case
 study; §5 the safety model as actually implemented and shipped; §6 the
 integration surface for external consumers (IDEs, agents, Docker);
 §7 the limitations we are aware of and disclose.
+
+### 1.1 Why local: the democratization argument
+
+It is tempting to frame cloud-hosted coding agents as merely *inferior on
+privacy*, a trade-off someone else mitigates with data-retention toggles. We
+register three stronger objections, because they are structural rather than
+configurable:
+
+**Cost trajectory.** Rented inference is priced, advertised and re-priced by
+the seller. Each frontier refresh has historically reset marginal cost
+upward while throttling concurrency, meaning a team's agent bill scales like
+a headcount line item. The user already possesses potentially idle consumer
+accelerators whose marginal server-hour is $0. The economics are not even
+close once the serving layer is engineered for that hardware (§4).
+
+**Revocability.** A rented brain is a revocable grant: terms change, models
+are deprecated, regions are rate-limited, accounts are flagged without a
+debuggable appeal path. When the agent is load-bearing, this is an
+unauditable dependency on a Terms of Service the consumer never negotiated.
+Owning weights, runtime and checkpoint format removes the class of outage,
+not merely its frequency.
+
+**Data egress.** For a coding agent, context *is* the codebase. Prompts carry
+file contents, dependency trees, architecture decisions, and
+secrets-adjacent material out of the machine's controllable envelope into an
+event stream that is immutable, uninspectable and undeleteable by the user.
+And its *usage* side quietly trains future models on that traffic; the
+provider's incentive is to use it, with no contractual obligation to care
+whether it should. You cannot audit a data flow you cannot see.
+
+### 1.2 Why the generalist stacks keep breaking, and where the fix belongs
+
+llama.cpp, vLLM and other *generalist* serving layers must satisfy every
+model family, every template and every upstream refactor simultaneously.
+Generality forces politeness, and politeness at the serving boundary makes
+the agent's contract *ambiguous*: chat templates drift across releases;
+`finish_reason` collapses "turn ended", "generation truncated" and "tool
+requested" into similar byte patterns; tool-call JSON arrives partial and the
+harness upstack fills the gap with "please continue" stalls or invented
+arguments.
+
+We argue this is unwinnable at the model layer and entirely winnable at the
+**contract layer** — which is why FORGE is structured the way it is: pinned
+runtime modified only through patch series (§3.1), strict stop-reason
+disambiguation with no partial exposure on failure (§3.2), verifier-gated
+completion and fail-closed checkpoints (§3.3, §5). Interruptions still occur;
+the difference is that an interruption is recorded as UNKNOWN and stops the
+run, rather than being papered over by a generalist harness's optimism.
 
 ## 2. Design principles
 
@@ -331,9 +382,13 @@ case study of the config error that produces a 26× slowdown when AI coding
 feels slow, and (c) a checkpoint/verifier semantics that lets a local,
 weakly-grounded smallish model participate in real code changes with
 audit-grade insist-on-evidence gates. Local-first is difficult and it is
-fragile in places this paper catalogs — but it is workable on one GPU, and
-the stack proposed here is open enough that its own release history is part
-of the evidence.
+fragile in places this paper catalogs — but it is workable on one GPU already
+owned, the contract layer absorbs the failure modes generalist stacks are
+structurally unable to absorb, and the stack proposed here is open enough
+that its own release history is part of the evidence. Democratized
+intelligence is not a smaller copy of the cloud; it is a different contract
+between three layers — model, runtime, harness — where every layer is one
+that its user can read.
 
 ## References
 
