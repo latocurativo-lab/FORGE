@@ -1,0 +1,7 @@
+runtime/upstream pin (Agente B, M0)
+repo:    https://github.com/ggml-org/llama.cpp
+branch:  master
+commit:  522021325546ea322b0b1e58a50f9dbf03a5f197
+data:    2026-10-28
+subject: hexagon: add conv2d support (#30995)
+note:    clone shallow (--depth 1); supporto architettura gemma4 presente in src/llama-arch/ + gguf-py (verificato dopo checkout)

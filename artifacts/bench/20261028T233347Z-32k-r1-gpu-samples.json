@@ -1,0 +1,429 @@
+[
+  {
+    "utc": "2026-10-28T23:36:13.572093+00:00",
+    "total_mib": 16380,
+    "used_mib": 1236,
+    "free_mib": 14872,
+    "utilization_pct": 2
+  },
+  {
+    "utc": "2026-10-28T23:36:14.122892+00:00",
+    "total_mib": 16380,
+    "used_mib": 1342,
+    "free_mib": 14766,
+    "utilization_pct": 11
+  },
+  {
+    "utc": "2026-10-28T23:36:14.684316+00:00",
+    "total_mib": 16380,
+    "used_mib": 1341,
+    "free_mib": 14767,
+    "utilization_pct": 1
+  },
+  {
+    "utc": "2026-10-28T23:36:15.226288+00:00",
+    "total_mib": 16380,
+    "used_mib": 8120,
+    "free_mib": 7988,
+    "utilization_pct": 1
+  },
+  {
+    "utc": "2026-10-28T23:36:15.772518+00:00",
+    "total_mib": 16380,
+    "used_mib": 8120,
+    "free_mib": 7988,
+    "utilization_pct": 26
+  },
+  {
+    "utc": "2026-10-28T23:36:16.317406+00:00",
+    "total_mib": 16380,
+    "used_mib": 8120,
+    "free_mib": 7988,
+    "utilization_pct": 25
+  },
+  {
+    "utc": "2026-10-28T23:36:16.866475+00:00",
+    "total_mib": 16380,
+    "used_mib": 8120,
+    "free_mib": 7988,
+    "utilization_pct": 26
+  },
+  {
+    "utc": "2026-10-28T23:36:17.413848+00:00",
+    "total_mib": 16380,
+    "used_mib": 8120,
+    "free_mib": 7988,
+    "utilization_pct": 26
+  },
+  {
+    "utc": "2026-10-28T23:36:17.958162+00:00",
+    "total_mib": 16380,
+    "used_mib": 9295,
+    "free_mib": 6813,
+    "utilization_pct": 1
+  },
+  {
+    "utc": "2026-10-28T23:36:18.505459+00:00",
+    "total_mib": 16380,
+    "used_mib": 9296,
+    "free_mib": 6812,
+    "utilization_pct": 1
+  },
+  {
+    "utc": "2026-10-28T23:36:19.052944+00:00",
+    "total_mib": 16380,
+    "used_mib": 9296,
+    "free_mib": 6812,
+    "utilization_pct": 1
+  },
+  {
+    "utc": "2026-10-28T23:36:19.596343+00:00",
+    "total_mib": 16380,
+    "used_mib": 9296,
+    "free_mib": 6812,
+    "utilization_pct": 2
+  },
+  {
+    "utc": "2026-10-28T23:36:20.144177+00:00",
+    "total_mib": 16380,
+    "used_mib": 9296,
+    "free_mib": 6812,
+    "utilization_pct": 1
+  },
+  {
+    "utc": "2026-10-28T23:36:20.692655+00:00",
+    "total_mib": 16380,
+    "used_mib": 9295,
+    "free_mib": 6813,
+    "utilization_pct": 2
+  },
+  {
+    "utc": "2026-10-28T23:36:21.250239+00:00",
+    "total_mib": 16380,
+    "used_mib": 9296,
+    "free_mib": 6812,
+    "utilization_pct": 2
+  },
+  {
+    "utc": "2026-10-28T23:36:21.799445+00:00",
+    "total_mib": 16380,
+    "used_mib": 9296,
+    "free_mib": 6812,
+    "utilization_pct": 5
+  },
+  {
+    "utc": "2026-10-28T23:36:22.347325+00:00",
+    "total_mib": 16380,
+    "used_mib": 9296,
+    "free_mib": 6812,
+    "utilization_pct": 7
+  },
+  {
+    "utc": "2026-10-28T23:36:22.915117+00:00",
+    "total_mib": 16380,
+    "used_mib": 9305,
+    "free_mib": 6803,
+    "utilization_pct": 99
+  },
+  {
+    "utc": "2026-10-28T23:36:23.468795+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:24.020135+00:00",
+    "total_mib": 16380,
+    "used_mib": 9305,
+    "free_mib": 6803,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:24.572503+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:25.122813+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:25.673667+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:26.223629+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:26.773061+00:00",
+    "total_mib": 16380,
+    "used_mib": 9305,
+    "free_mib": 6803,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:27.326818+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:27.879370+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:28.429934+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:28.981657+00:00",
+    "total_mib": 16380,
+    "used_mib": 9305,
+    "free_mib": 6803,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:29.521684+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 99
+  },
+  {
+    "utc": "2026-10-28T23:36:30.073093+00:00",
+    "total_mib": 16380,
+    "used_mib": 9305,
+    "free_mib": 6803,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:30.631089+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 99
+  },
+  {
+    "utc": "2026-10-28T23:36:31.211777+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:31.762214+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:32.310110+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:32.868535+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 99
+  },
+  {
+    "utc": "2026-10-28T23:36:33.433424+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:33.984554+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:34.535597+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:35.087740+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:35.638777+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:36.190902+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:36.740487+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:37.305024+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 99
+  },
+  {
+    "utc": "2026-10-28T23:36:37.932323+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:38.546878+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:39.115803+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:39.665568+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 99
+  },
+  {
+    "utc": "2026-10-28T23:36:40.217810+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:40.782851+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:41.437065+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:42.104027+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:42.726887+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 96
+  },
+  {
+    "utc": "2026-10-28T23:36:43.410175+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:43.999219+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:44.566443+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:45.131779+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:45.683131+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:46.236996+00:00",
+    "total_mib": 16380,
+    "used_mib": 9306,
+    "free_mib": 6802,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:46.785684+00:00",
+    "total_mib": 16380,
+    "used_mib": 9308,
+    "free_mib": 6800,
+    "utilization_pct": 100
+  },
+  {
+    "utc": "2026-10-28T23:36:47.337798+00:00",
+    "total_mib": 16380,
+    "used_mib": 1235,
+    "free_mib": 14873,
+    "utilization_pct": 1
+  }
+]

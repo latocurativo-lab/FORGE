@@ -1,0 +1,41 @@
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b1-5220213
+model      : C:\Users\geekandhack\Desktop\FORGE\models\gemma-4-12b-it-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Context filler text for VRAM benchmarking of the FORGE local runtime. Deterministic tokens fill the KV cache steadily. Context filler text for VRAM benchmarking of the FORGE local runtime. Deterministic tokens fill the KV cache steadily. Context filler text for VRAM benchmarking of the FORGE local runtime. Deterministic tokens fill the KV cache steadily. Context filler text for VRAM benchmarking of the FORGE local runtime. Deterministic tokens fill the KV cache steadily. Context filler text for  ... (truncated)
+
+[Start thinking]
+
+*   Input: A repeated block of text: "Context filler text for VRAM benchmarking of the FORGE local runtime. Deterministic tokens fill the KV cache steadily."
+    *   Context: The user is providing "filler text" for benchmarking VRAM (Video RAM) in a local runtime called "FORGE."
+    *   Observation: The text is repeated hundreds of times.
+
+    *   The user is likely testing how the AI handles very long context windows or is providing a dataset to be processed.
+    *   However, as an AI, I don't "process" this text unless
+
+[ Prompt: 1438.5 t/s | Generation: 29.1 t/s ]
+
+
+Exiting...

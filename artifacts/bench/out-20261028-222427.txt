@@ -1,0 +1,45 @@
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b1-5220213
+model      : C:\Users\geekandhack\Desktop\FORGE\models\gemma-4-12b-it-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Write a short paragraph about the history of UNIX.
+
+[Start thinking]
+
+The history of UNIX.
+Short paragraph.
+Provide a concise overview of its origins, development, and legacy.
+
+    *   *Origins:* Late 1960s, AT&T Bell Labs.
+    *   *Key Figures:* Ken Thompson, Dennis Ritchie.
+    *   *Predecessor:* Multics (influenced by it, but also a reaction against its complexity).
+    *   *Language:* Developed in C (crucial point).
+    *   *Evolution:* BSD (Berkeley Software Distribution), System V, Solaris, etc.
+    *   *Legacy:* Foundation
+
+[ Prompt: 197.6 t/s | Generation: 32.6 t/s ]
+
+
+Exiting...

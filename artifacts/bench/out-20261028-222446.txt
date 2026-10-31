@@ -1,0 +1,41 @@
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b1-5220213
+model      : C:\Users\geekandhack\Desktop\FORGE\models\gemma-4-12b-it-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Context filler text for VRAM benchmarking of the FORGE local runtime. Deterministic tokens fill the KV cache steadily. Context filler text for VRAM benchmarking of the FORGE local runtime. Deterministic tokens fill the KV cache steadily. Context filler text for VRAM benchmarking of the FORGE local runtime. Deterministic tokens fill the KV cache steadily. Context filler text for VRAM benchmarking of the FORGE local runtime. Deterministic tokens fill the KV cache steadily. Context filler text for  ... (truncated)
+
+[Start thinking]
+
+The user provided a very long repeating block of text: "Context filler text for VRAM benchmarking of the FORGE local runtime. Deterministic tokens fill the KV cache steadily." This is repeated hundreds of times.
+
+    *   "Context filler text": Used to occupy space in the input.
+    *   "VRAM benchmarking": Measuring Video RAM usage.
+    *   "FORGE local runtime": Refers to a specific software environment (likely a local LLM runner or a specific inference engine setup).
+    *   "Deterministic tokens fill the KV cache steadily": This implies the goal is to see how
+
+[ Prompt: 1589.7 t/s | Generation: 29.9 t/s ]
+
+
+Exiting...

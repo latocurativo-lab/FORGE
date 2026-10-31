@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "I have received your request to forge a reproducible context benchmark. However, I cannot"
+      }
+    }
+  ],
+  "created": 1793230749,
+  "model": "C:\\Users\\geekandhack\\Desktop\\FORGE\\models\\gemma-4-12b-it-Q4_K_M.gguf",
+  "system_fingerprint": "b1-5220213",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 65537,
+    "total_tokens": 65553,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-dQN2r4QzYjmRNaOpQEoK0GPVXMuXan3l",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 65537,
+    "prompt_ms": 58857.605,
+    "prompt_per_token_ms": 0.8980820757739904,
+    "prompt_per_second": 1113.4839754352897,
+    "predicted_n": 16,
+    "predicted_ms": 543.983,
+    "predicted_per_token_ms": 36.26553333333333,
+    "predicted_per_second": 27.574391111486943
+  }
+}

@@ -21,7 +21,16 @@ artifacts/*.gguf
 *.pdb
 
 # tmp agenti
-.forge/tmp/
+.forge/
+
+# artifacts fuori tema pubblicabili
+artifacts/forge-studio-portable*/
+artifacts/video_research/
+artifacts/youtube_*/
+
+# build web/rust
+dist/
+target/
 
 # log di runtime
 runtime/*.log

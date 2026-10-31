@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "I have received your instructions to forge a reproducible context benchmark. I will record every"
+      }
+    }
+  ],
+  "created": 1793230443,
+  "model": "C:\\Users\\geekandhack\\Desktop\\FORGE\\models\\gemma-4-12b-it-Q4_K_M.gguf",
+  "system_fingerprint": "b1-5220213",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 4097,
+    "total_tokens": 4113,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-GZbxZkay8RNQOUOQzVzfPQDdnI24870g",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 4097,
+    "prompt_ms": 2472.404,
+    "prompt_per_token_ms": 0.6034669270197706,
+    "prompt_per_second": 1657.0916403629828,
+    "predicted_n": 16,
+    "predicted_ms": 494.922,
+    "predicted_per_token_ms": 32.994800000000005,
+    "predicted_per_second": 30.307806078533588
+  }
+}

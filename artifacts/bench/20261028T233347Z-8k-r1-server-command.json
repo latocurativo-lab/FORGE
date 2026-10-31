@@ -1,0 +1,22 @@
+[
+  "C:\\Users\\geekandhack\\Desktop\\FORGE\\runtime\\upstream\\llama.cpp\\build\\bin\\Release\\llama-server.exe",
+  "-m",
+  "C:\\Users\\geekandhack\\Desktop\\FORGE\\models\\gemma-4-12b-it-Q4_K_M.gguf",
+  "-ngl",
+  "99",
+  "-fa",
+  "on",
+  "-c",
+  "8272",
+  "-t",
+  "4",
+  "-np",
+  "1",
+  "--host",
+  "127.0.0.1",
+  "--port",
+  "18941",
+  "--jinja",
+  "--reasoning",
+  "off"
+]
