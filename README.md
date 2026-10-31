@@ -245,7 +245,8 @@ place them in `models/` and verifies them by hash.
 
 <div align="center">
 
-Storie di tuning su un'unico GPU: [`paper/forge.md`](paper/forge.md) ·
-Built with: llama.cpp · ds4 (design) · WinHTTP · CUDA
+**Manuel Cavallaro** — [GeekAndHack.com](https://geekandhack.com) · [digithole.com](https://digithole.com)
+Local-first tuning war stories: [`paper/forge.md`](paper/forge.md) ·
+Built with: llama.cpp (MIT, pinned fork) · ds4 (design reference, MIT) · WinHTTP · CUDA
 
 </div>

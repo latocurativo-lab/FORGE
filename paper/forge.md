@@ -1,6 +1,6 @@
 ---
 title: "FORGE: A Local-First Agentic Coding Stack for Consumer GPUs"
-author: "FORGE contributors"
+author: "Manuel Cavallaro — GeekAndHack.com / digithole.com"
 date: "October 2026"
 license: "Code MIT; model weights under their own upstream licenses (see LICENSES/NOTICE.md)"
 ---
